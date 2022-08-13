@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 16px;
+    list-style-type: none
+}
+
+:focus {
+    outline: 0
+}
+
+body {
+    font-family: "Montserrat", sans-serif
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.heading {
+    font-size: 50px;
+    margin: 70px 0 50px;
+    text-align: center
+}
+
+p {
+    line-height: 1.5
+}
+
+.hero-section,
+.hero-section-two {
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 30px
+}
+
+.hero-section {
+    background: #7030cc
+}
+
+.hero-section-two .welcome-title {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.hero-section-two {
+    background: url(../32010.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh
+}
+
+.default-padding {
+    padding: 40px 120px 0
+}
+
+.features.default-padding {
+    padding-left: unset
+}
+
+navbar ul {
+    display: flex;
+    justify-content: space-between
+}
+
+.main-menu li.active {
+    color: #1bbcef
+}
+
+.main-menu li.active::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ff69b4
+}
+
+navbar {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center
+}
+
+.contact-us,
+.main-menu li {
+    font-size: 18px
+}
+
+.main-menu li:last-child {
+    justify-self: center
+}
+
+.main-menu li {
+    cursor: pointer
+}
+
+.contact-us {
+    justify-self: flex-end;
+    padding: 10px 30px;
+    background-color: #1bbcef
+}
+
+.contact-us a {
+    color: #fff;
+    font-weight: 500
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700
+}
+
+.border-wrap {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center
+}
+
+.hero-welcome {
+    display: grid;
+    grid-template-columns: 2.5fr 4fr;
+    font-size: 60px;
+    column-gap: 80px
+}
+
+.welcome-title {
+    align-self: center
+}
+
+.welcome-title h1 {
+    font-size: 44px;
+    margin-bottom: 40px
+}
+
+.features {
+    display: flex
+}
+
+.features img {
+    transform: scale(.8)
+}
+
+.use-cases-banner {
+    flex: 1.3
+}
+
+.features-list {
+    flex: .7;
+    margin-top: 150px
+}
+
+.features-list h2,
+.primary-features h2 {
+    font-size: 34px;
+    margin-bottom: 50px
+}
+
+.list-before+* {
+    display: inline-block;
+    padding-bottom: 16px
+}
+
+.features-list li {
+    position: relative;
+    margin-bottom: 40px
+}
+
+span.list-before svg {
+    width: 20px;
+    position: absolute;
+    left: -26px
+}
+
+.orange path {
+    fill: #f28a3f
+}
+
+.green path {
+    fill: #7aca3a
+}
+
+.blue path {
+    fill: #3f9cf2
+}
+
+.primary-features {
+    text-align: center
+}
+
+.primary-features.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 100px
+}
+
+.primary-features.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #9c9cab8a;
+    align-items: center;
+    justify-content: center;
+    width: 200px
+}
+
+.primary-features .figure {
+    background-color: #faeaeb;
+    padding: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 24px;
+    margin-top: 20px
+}
+
+.primary-features .figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.primary-features.card p {
+    font-size: 12px;
+    margin-top: 10px
+}
+
+.primary-features.card .description {
+    padding: 20px
+}
+
+.primary-features.card.active .description {
+    background: #6429b7;
+    color: #fff;
+    border-radius: 30px;
+    position: relative
+}
+
+.wave .primary-features.card.active .description {
+    background: unset
+}
+
+.wave .primary-features.card.active .description::before {
+    background: url(../wave.svg)no-repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    z-index: -1;
+    background-position-x: center;
+    transform: scaleX(-1)
+}
