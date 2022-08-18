@@ -256,3 +256,55 @@ span.list-before svg {
     background-position-x: center;
     transform: scaleX(-1)
 }
+
+@media (max-width:991px) {
+
+    navbar,
+    .border-wrap,
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .default-padding {
+        padding: 40px 20px 0;
+    }
+
+    .welcome-title h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .features>* {
+        flex: 1
+    }
+
+    .hero-section {
+        margin: 0px;
+    }
+
+    .primary-features h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .primary-features.cards {
+        display: flex;
+        gap: 20px;
+        margin: 0 10px;
+        flex-wrap: wrap;
+    }
+
+    .features-list {
+        flex: .7;
+        margin-top: 50px;
+    }
+
+    .hero-welcome {
+        display: flex;
+        flex-direction: column;
+    }
+}
